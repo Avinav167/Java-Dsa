@@ -19,8 +19,8 @@ public class Binary_Search {
         return -1;
     }
     public static void main(String [] args){
-        int num[]={2,4,6,8,10,12,14};
-        int key=12;
+        int num[]={2,4,6,8,10,14};
+        int key=8;
         System.out.println("Index at="+binarySearch(num,key));
     }
 }
