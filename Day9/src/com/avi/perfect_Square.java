@@ -19,9 +19,20 @@ public class perfect_Square {
         }
         return false;
     }
+    public static boolean prtsqr(int num){
+        for(int i=0;i*i<=num;i++){
+            long square=(long)i*i;
+            if(square==num){
+                return true;
+            }
+        }
+        return false;
+    }
     public static void main(String args[]){
         Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the Number to check");
         int num=sc.nextInt();
         System.out.println("Perfect Square:"+perfectSqr(num));
+//        System.out.println("Perfect Square from 2nd approach:"+prtsqr(num));
     }
 }
